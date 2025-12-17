@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "config": {
+    "bundle": {
+      "git": {
+        "branch": "master",
+        "bundle_root_path": "Databricks_Practice/citibike_project2"
+      }
+    },
+    "workspace": {
+      "file_path": "/Workspace/Users/damirgafic@gmail.com/citibike_project/citibike_project2/dev/files"
+    },
+    "resources": {},
+    "presets": {
+      "source_linked_deployment": false
+    }
+  },
+  "extra": {}
+}
