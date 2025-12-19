@@ -3,17 +3,28 @@
   "config": {
     "bundle": {
       "git": {
-        "branch": "master",
-        "bundle_root_path": "Databricks_Practice/citibike_project2"
+        "branch": "main",
+        "origin_url": "https://github.com/damirgafic/citibike_project.git",
+        "commit": "a9f013afe2bbe0a28ad652f1601938e225cd3efd",
+        "bundle_root_path": "citibike_project2/dev/files"
       }
     },
     "workspace": {
       "file_path": "/Workspace/Users/damirgafic@gmail.com/citibike_project/citibike_project2/dev/files"
     },
-    "resources": {},
+    "resources": {
+      "jobs": {
+        "citibike_etl_pipeline_nb": {
+          "id": "273158299364510",
+          "relative_path": "resources/citibike_etl_pipeline_nb.job.yml"
+        }
+      }
+    },
     "presets": {
-      "source_linked_deployment": false
+      "source_linked_deployment": true
     }
   },
-  "extra": {}
+  "extra": {
+    "git_folder_path": "/Workspace/Users/damirgafic@gmail.com/citibike_project"
+  }
 }
