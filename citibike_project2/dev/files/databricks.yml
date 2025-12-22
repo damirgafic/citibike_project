@@ -11,6 +11,7 @@ include:
 # Variable declarations. These variables are assigned in the dev/prod targets below.
 variables:
   catalog:
+    default: "citibike_dev"
     description: The catalog to use
   schema:
     description: The schema to use
@@ -27,7 +28,6 @@ targets:
       host: https://dbc-49e526e6-7753.cloud.databricks.com
       root_path: /Workspace/Users/damirgafic@gmail.com/citibike_project/${bundle.name}/${bundle.target}
     variables:
-      catalog: workspace
       schema: dev
     presets:
       artifacts_dynamic_version: true
@@ -36,10 +36,10 @@ targets:
     workspace:
       host: https://dbc-49e526e6-7753.cloud.databricks.com
       # We explicitly deploy to /Workspace/Users/damirgafic@gmail.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/damirgafic@gmail.com/.bundle/${bundle.name}/${bundle.target}
+      root_path:  /Workspace/Users/damirgafic@gmail.com/citibike_project_prod/${bundle.name}/${bundle.target}
     variables:
-      catalog: workspace
       schema: prod
+      catalog: "citibike_prod"
     permissions:
       - user_name: damirgafic@gmail.com
         level: CAN_MANAGE
